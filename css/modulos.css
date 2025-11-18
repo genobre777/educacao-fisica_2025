@@ -1,43 +1,95 @@
-.modules-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 20px;
+/* ======== ESTILO GERAL ======== */
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: #f4f6f9;
+    color: #222;
 }
 
-.module-card {
-    background: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    cursor: pointer;
+h1 {
     text-align: center;
-    font-weight: bold;
-    border: 1px solid #ddd;
-    transition: .2s;
+    margin-top: 25px;
+    color: #0d6efd;
+    font-size: 2rem;
+    font-weight: 700;
 }
 
-.module-card:hover {
-    background: #e3f2fd;
-}
-
-.conteudo-modulo {
+/* ======== GRID DOS MÓDULOS ======== */
+.modulos-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
     padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
 }
 
-.hidden {
+/* ======== CARD DE CADA MÓDULO ======== */
+.modulo-card {
+    background: white;
+    padding: 18px;
+    text-align: center;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    color: #0d6efd;
+    transition: 0.2s;
+}
+
+.modulo-card:hover {
+    transform: translateY(-3px);
+    background: #e8f0ff;
+}
+
+/* ======== POPUP DO CONTEÚDO ======== */
+#conteudoModulo {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.18);
+    width: 90%;
+    max-width: 700px;
+    margin: 40px auto;
     display: none;
 }
 
-#voltarBtn {
-    padding: 10px 15px;
-    background: #2196f3;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-bottom: 20px;
+#conteudoModulo h2 {
+    margin-bottom: 15px;
+    color: #0d6efd;
 }
 
-#voltarBtn:hover {
-    background: #0b7dda;
+#conteudoModulo p {
+    line-height: 1.6;
+}
+
+#conteudoModulo a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 14px;
+    background: #198754;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+#conteudoModulo a:hover {
+    background: #146c43;
+}
+
+/* Botão voltar */
+.btn-voltar {
+    margin-top: 20px;
+    background: #6c757d;
+    color: white;
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn-voltar:hover {
+    background: #5b636a;
 }

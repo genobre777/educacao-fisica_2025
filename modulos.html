@@ -3,27 +3,44 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Módulos – Educação Física</title>
+    <title>Módulos • Educação Física</title>
+
+    <!-- Link para o CSS -->
     <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+
     <header>
         <h1>Módulos do Curso</h1>
+        <p>Selecione um módulo para ver o conteúdo</p>
     </header>
 
     <main>
         <div id="modulesContainer" class="modules-grid"></div>
 
-        <section id="conteudoModulo" class="conteudo-modulo hidden">
-            <button id="voltarBtn">Voltar</button>
+        <section id="detalhesModulo" class="detalhes hidden">
+            <button id="btnVoltar" class="btn-voltar">← Voltar</button>
+
             <h2 id="tituloModulo"></h2>
             <p id="textoModulo"></p>
-            <div id="linksModulo"></div>
-            <div id="videosModulo"></div>
-            <div id="exercicioModulo"></div>
+
+            <h3>Links Úteis</h3>
+            <ul id="linksModulo"></ul>
+
+            <h3>Vídeo Explicativo</h3>
+            <div id="videoModulo" class="video"></div>
+
+            <h3>E-book</h3>
+            <a id="ebookModulo" class="ebook-btn" target="_blank">Baixar E-book</a>
+
+            <h3>Exercício Recomendado</h3>
+            <p id="exercicioModulo"></p>
         </section>
     </main>
 
-    <script src="modulos.js"></script>
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
 </body>
 </html>

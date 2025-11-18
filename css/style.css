@@ -1,6 +1,6 @@
 /* ===========================
-   ESTILO GERAL
-=============================*/
+   CONFIGURAÇÃO GERAL
+=========================== */
 body {
     margin: 0;
     padding: 0;
@@ -9,113 +9,140 @@ body {
     font-family: "Segoe UI", Arial, sans-serif;
 }
 
-/* Container padrão */
-.container {
-    max-width: 1100px;
-    margin: 40px auto;
-    padding: 20px;
+/* ===========================
+   CABEÇALHO
+=========================== */
+header {
+    text-align: center;
+    padding: 30px 20px;
+    background: #161b22;
+    border-bottom: 1px solid #30363d;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.4);
 }
 
-/* ===========================
-   CABEÇALHO E TÍTULO
-=============================*/
 header h1 {
-    text-align: center;
-    font-size: 42px;
-    margin: 30px 0;
+    margin: 0;
+    font-size: 38px;
     color: #58a6ff;
+    text-shadow: 0 0 12px rgba(88,166,255,0.4);
     font-weight: 700;
-    text-shadow: 0 0 12px rgba(88,166,255,0.5);
     animation: fadeIn 1s ease-in-out;
 }
 
-/* ===========================
-   BARRA DE PESQUISA
-=============================*/
-.search-container {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 25px;
-}
-
-.search-container input {
-    width: 350px;
+/* Campo de busca */
+header input {
+    margin-top: 20px;
+    width: 320px;
     padding: 12px;
-    border-radius: 10px;
+    border-radius: 8px;
     border: none;
-    background: #161b22;
-    color: #fff;
-    font-size: 15px;
+    background: #0d1117;
+    color: white;
+    font-size: 16px;
     transition: 0.3s;
+    border: 1px solid #30363d;
 }
 
-.search-container input:focus {
-    box-shadow: 0 0 12px #58a6ff;
+header input:focus {
     outline: none;
+    box-shadow: 0 0 12px #58a6ff;
+    border-color: #58a6ff;
 }
 
 /* ===========================
-   MENU SUPERIOR
-=============================*/
-nav {
+   MENU
+=========================== */
+.menu {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    padding: 15px;
+    flex-wrap: wrap;
+    gap: 18px;
+    padding: 20px;
+    margin-top: 20px;
     background: #161b22;
-    border-bottom: 1px solid #30363d;
+    border-radius: 10px;
+    box-shadow: 0 0 18px rgba(0,0,0,0.3);
 }
 
-nav a {
+.menu a {
     color: #c9d1d9;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 18px;
     padding: 10px 18px;
+    background: #21262d;
     border-radius: 8px;
     transition: 0.3s;
+    border: 1px solid transparent;
 }
 
-nav a:hover {
+.menu a:hover {
     background: #238636;
-    color: white;
-    box-shadow: 0 0 12px #238636;
+    color: #ffffff;
+    border-color: #2ea043;
+    box-shadow: 0 0 12px rgba(46,160,67,0.7);
 }
 
 /* ===========================
-   ÁREA PRINCIPAL DE TEXTO
-=============================*/
-.content-box {
+   CONTEÚDO PRINCIPAL
+=========================== */
+.container {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+/* Caixa de introdução */
+.intro {
     background: #161b22;
     padding: 30px;
     border-radius: 12px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.4);
-    animation: fadeIn 1.2s ease;
+    box-shadow: 0 0 25px rgba(0,0,0,0.4);
+    animation: fadeInUp 1s ease;
 }
 
-.content-box h2 {
+.intro h2 {
     font-size: 28px;
+    margin-top: 0;
     color: #58a6ff;
 }
 
-.content-box p {
+.intro p {
     font-size: 18px;
     line-height: 1.7;
 }
 
 /* ===========================
-   RODAPÉ
-=============================*/
-footer {
-    text-align: center;
-    padding: 20px;
-    margin-top: 50px;
-    color: #8b949e;
+   ANIMAÇÕES
+=========================== */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 /* ===========================
-   ANIMAÇÕES
-=============================*/
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(15px); }
-    to { opacity: 1; transform: translateY(0); }
+   RESPONSIVIDADE
+=========================== */
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    header input {
+        width: 90%;
+    }
+
+    .menu a {
+        font-size: 16px;
+        padding: 8px 14px;
+    }
+
+    .intro {
+        padding: 20px;
+    }
 }

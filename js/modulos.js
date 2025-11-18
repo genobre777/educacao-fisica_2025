@@ -1,106 +1,189 @@
-// LISTA DE MÓDULOS
+// Lista completa (use as suas entradas originais)
 const modulos = [
-    "Introdução à Educação Física",
-    "Cinesiologia e Biomecânica",
-    "Fisiologia do Exercício",
-    "Aprendizagem e Controle Motor",
-    "Avaliação Física"
+"Administração Escolar",
+"Anatomia do Sistema Musculoesquelético",
+"Anatomia dos Sistemas Orgânicos",
+"Anatomia e Fisiologia Humana",
+"Antropologia e Sociologia da Educação Física",
+"Aprendizagem e Controle Motor",
+"Atividade Formativa I",
+"Atividade Formativa II",
+"Atividade Formativa III",
+"Atividade Formativa IV",
+"Atividade Formativa V",
+"Atividade Formativa VI",
+"Atividade Formativa VII",
+"Atividade Formativa VIII",
+"Atividades Rítmicas e Dança",
+"Atividades Rítmicas na Escola",
+"Avaliação da Aprendizagem",
+"Avaliação Física",
+"Bases de Biologia Celular e Genética",
+"Biomecânica",
+"Biomecânica do Esporte",
+"Cineantropometria",
+"Cinesiologia e Biomecânica",
+"Corporeidade e Psicomotricidade",
+"Currículo e Planejamento da Educação Básica",
+"Desenvolvimento Motor",
+"Didática e Prática de Ensino",
+"Direitos Educacionais de Crianças e Adolescentes",
+"Direitos Humanos e Relações Étnico-raciais",
+"Educação Ambiental e Cidadania",
+"Educação e Ludicidade",
+"Educação Física Adaptada",
+"Educação Física Inclusiva",
+"Educação Física: Áreas de Atuação",
+"Epistemologia",
+"Escola e Sociedade",
+"Esportes Individuais",
+"Estrutura e Funcionamento da Educação Básica",
+"Estágio Supervisionado I",
+"Estágio Supervisionado II",
+"Estágio Supervisionado III",
+"Estágio Supervisionado IV",
+"Filosofia da Educação",
+"Fisiologia do Exercício",
+"Fisiologia do Exercício e Prescrição de Exercícios",
+"Formação Docente para a Diversidade",
+"Fundamentos da Epidemiologia e Estatística",
+"Fundamentos da Ginástica",
+"Fundamentos de Bioquímica",
+"Fundamentos de Citologia e Histologia",
+"Fundamentos Teóricos e Metodológicos da Educação Especial e Inclusiva",
+"Gestão de Pessoas, Negócios e Organização Desportiva",
+"Gestão Educacional",
+"História da Educação",
+"História e Fund. Socioantropológicos da Educação Física",
+"Iniciação Esportiva",
+"Introdução à Educação Física",
+"Jogos, Brinquedos e Brincadeiras",
+"Legislação Educacional",
+"Libras - Língua Brasileira de Sinais",
+"Metodologia da Educação Física Escolar",
+"Metodologia da Pesquisa e do Trabalho Científico",
+"Metodologia do Ensino da Dança",
+"Metodologia do Ensino da Ginástica Artística Escolar",
+"Metodologia do Ensino das Atividades Aquáticas",
+"Metodologia do Ensino de Atividades Aquáticas",
+"Metodologia do Ensino de Atletismo",
+"Metodologia do Ensino de Basquetebol",
+"Metodologia do Ensino de Futebol e Futsal",
+"Metodologia do Ensino de Ginástica",
+"Metodologia do Ensino de Handebol",
+"Metodologia do Ensino de Lutas Esportivas",
+"Metodologia do Ensino de Voleibol",
+"Metodologia do Ensino do Futebol",
+"Modalidades Esportivas Coletivas",
+"Novos Caminhos para Profissionais da Educação",
+"Organização e Administração de Eventos Escolares",
+"Políticas Públicas em Educação Física",
+"Prescrição de Exercícios para Idosos e Doentes Crônicos",
+"Prevenção de Acidentes e Socorros de Urgência",
+"Promoção da Saúde na Escola",
+"Prática Profissional em EF: Cultura e Lazer",
+"Prática Profissional em EF: Esportes",
+"Prática Textual em Língua Portuguesa",
+"Psicologia da Educação",
+"Psicologia do Desenvolvimento Humano",
+"Psicologia do Esporte",
+"Psicologia no Esporte",
+"Psicomotricidade no Contexto Escolar",
+"Recreação e Lazer",
+"Sociologia da Educação",
+"Teoria e Prática da Ginástica Artística",
+"Teoria e Prática dos Esportes de Lutas",
+"Trabalho de Conclusão de Curso",
+"Transversalidade na Educação",
+"Treinamento Neuromuscular e Atividades em Academias",
+"Tópicos Especiais",
+"Ética e Deontologia da Educação Física"
 ];
 
-// DADOS DOS MÓDULOS (AQUI VOCÊ EDITA)
-const dadosModulos = {
-    "Introdução à Educação Física": {
-        descricao: "Estudo histórico, conceitual e científico da Educação Física.",
-        texto: "A Educação Física é a área que estuda o movimento humano sob perspectivas biológicas, sociais e pedagógicas...",
-        video: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        links: [
-            "https://brasilescola.uol.com.br/educacao/educacao-fisica.htm",
-            "https://pt.wikipedia.org/wiki/Educa%C3%A7%C3%A3o_f%C3%ADsica"
-        ],
-        ebooks: [
-            "https://portal.utfpr.edu.br/biblioteca/ebooks/educacao-fisica"
-        ],
-        exercicio: "Escreva um resumo explicando a importância da Educação Física para a saúde."
-    },
+// Função auxiliar para criar URLs de busca
+function googleSearchQuery(q) {
+  return 'https://www.google.com/search?q=' + encodeURIComponent(q);
+}
+function googleBooksQuery(q) {
+  return 'https://www.google.com/search?tbm=bks&q=' + encodeURIComponent(q);
+}
+function scieloQuery(q) {
+  return 'https://search.scielo.org/?q=' + encodeURIComponent(q);
+}
+function youtubeSearchQuery(q) {
+  return 'https://www.youtube.com/results?search_query=' + encodeURIComponent(q);
+}
 
-    "Cinesiologia e Biomecânica": {
-        descricao: "Estudo científico do movimento humano.",
-        texto: "A Biomecânica analisa forças internas e externas aplicadas ao corpo humano…",
-        video: "https://www.youtube.com/embed/VIDEOAQUI",
-        links: ["https://link1.com"],
-        ebooks: ["https://ebook-biomecanica.com"],
-        exercicio: "Faça um mapa mental sobre planos e eixos do movimento."
-    },
-
-    "Fisiologia do Exercício": {
-        descricao: "Funcionamento do organismo durante o esforço físico.",
-        texto: "A fisiologia do exercício investiga adaptações cardíacas, musculares e respiratórias…",
-        video: "https://www.youtube.com/embed/VIDEOAQUI",
-        links: ["https://link-fisiologia.com"],
-        ebooks: ["https://ebook-fisio.com"],
-        exercicio: "Explique o que é VO2 máximo."
-    },
-
-    "Aprendizagem e Controle Motor": {
-        descricao: "Como o corpo aprende e controla movimentos.",
-        texto: "A aprendizagem motora estuda processos neurológicos, prática e feedback…",
-        video: "https://www.youtube.com/embed/VIDEOAQUI",
-        links: ["https://link-aprendizagem.com"],
-        ebooks: ["https://ebook-motor.com"],
-        exercicio: "Defina prática distribuída e prática massificada."
-    },
-
-    "Avaliação Física": {
-        descricao: "Métodos de mensuração corporal e de desempenho.",
-        texto: "A avaliação física fornece dados essenciais sobre saúde e performance…",
-        video: "https://www.youtube.com/embed/VIDEOAQUI",
-        links: ["https://link-avaliacao.com"],
-        ebooks: ["https://ebook-avaliacao.com"],
-        exercicio: "Meça e registre IMC, RCQ e Flexibilidade."
-    }
-};
-
-// Renderiza cards
-const container = document.getElementById("modulesContainer");
-modulos.forEach(modulo => {
-    const div = document.createElement("div");
-    div.classList.add("module-card");
-    div.textContent = modulo;
-    div.onclick = () => abrirModulo(modulo);
-    container.appendChild(div);
+// Gera dados padrão dinamicamente (descrição curta + links de busca + ebooks + vídeo pesquisa + exercício padrão)
+const dadosModulos = {};
+modulos.forEach(nome => {
+  dadosModulos[nome] = {
+    descricao: `Breve introdução ao tema "${nome}". Aborda conceitos fundamentais, objetivos de aprendizagem e aplicações práticas.`,
+    texto: `${nome}: leitura introdutória que contextualiza histórico, conceitos e aplicações na prática pedagógica. Recomendado leitura crítica e observação em campo.`,
+    videoSearch: youtubeSearchQuery(nome + ' aula explicativa'),
+    links: [
+      'https://pt.wikipedia.org/wiki/' + encodeURIComponent(nome.replace(/ /g,'_')),
+      googleSearchQuery(nome + ' artigo educação física')
+    ],
+    ebooks: [
+      googleBooksQuery(nome + ' pdf'),
+      scieloQuery(nome)
+    ],
+    exercicio: `Escreva um resumo (5-10 linhas) sobre os pontos principais de ${nome} e cite uma aplicação prática.`
+  };
 });
 
-// Abre módulo
+// Renderiza os cards na página
+const container = document.getElementById('modulesContainer');
+modulos.forEach(mod => {
+  const el = document.createElement('div');
+  el.className = 'module-card';
+  el.textContent = mod;
+  el.onclick = () => abrirModulo(mod);
+  container.appendChild(el);
+});
+
+// Abre o painel do módulo com os conteúdos automáticos
 function abrirModulo(nome) {
-    const dados = dadosModulos[nome];
+  const dados = dadosModulos[nome];
 
-    document.getElementById("modulesContainer").classList.add("hidden");
-    document.getElementById("conteudoModulo").classList.remove("hidden");
+  document.getElementById('tituloModulo').textContent = nome;
+  document.getElementById('descricaoModulo').textContent = dados.descricao;
+  document.getElementById('textoModulo').textContent = dados.texto;
 
-    document.getElementById("tituloModulo").textContent = nome;
-    document.getElementById("descricaoModulo").textContent = dados.descricao;
-    document.getElementById("textoModulo").textContent = dados.texto;
+  // vídeo (link para busca no YouTube)
+  const videoLink = document.getElementById('videoModulo');
+  videoLink.href = dados.videoSearch;
+  videoLink.textContent = 'Pesquisar vídeos no YouTube: ' + nome;
 
-    // video
-    document.getElementById("videoModulo").innerHTML =
-        `<iframe width="100%" height="315" src="${dados.video}" allowfullscreen></iframe>`;
+  // links úteis
+  const linksEl = document.getElementById('linksModulo');
+  linksEl.innerHTML = '';
+  dados.links.forEach(l => {
+    const li = document.createElement('li');
+    li.innerHTML = `<a href="${l}" target="_blank" rel="noopener">${l}</a>`;
+    linksEl.appendChild(li);
+  });
 
-    // links
-    let links = document.getElementById("linksModulo");
-    links.innerHTML = "";
-    dados.links.forEach(l => links.innerHTML += `<li><a href="${l}" target="_blank">${l}</a></li>`);
+  // ebooks
+  const ebooksEl = document.getElementById('ebooksModulo');
+  ebooksEl.innerHTML = '';
+  dados.ebooks.forEach(e => {
+    const li = document.createElement('li');
+    li.innerHTML = `<a href="${e}" target="_blank" rel="noopener">${e}</a>`;
+    ebooksEl.appendChild(li);
+  });
 
-    // ebooks
-    let ebooks = document.getElementById("ebooksModulo");
-    ebooks.innerHTML = "";
-    dados.ebooks.forEach(e => ebooks.innerHTML += `<li><a href="${e}" target="_blank">${e}</a></li>`);
+  // exercício
+  document.getElementById('exercicioModulo').textContent = dados.exercicio;
 
-    // exercício
-    document.getElementById("exercicioModulo").textContent = dados.exercicio;
+  // mostra painel e esconde grid
+  container.classList.add('hidden');
+  document.getElementById('conteudoModulo').classList.remove('hidden');
 }
 
 // voltar
-document.getElementById("voltarBtn").onclick = () => {
-    document.getElementById("conteudoModulo").classList.add("hidden");
-    document.getElementById("modulesContainer").classList.remove("hidden");
+document.getElementById('voltarBtn').onclick = () => {
+  document.getElementById('conteudoModulo').classList.add('hidden');
+  container.classList.remove('hidden');
 };

@@ -4,38 +4,140 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Módulos • Educação Física</title>
-  <link rel="stylesheet" href="css/style.css">      <!-- seu style principal -->
-  <link rel="stylesheet" href="css/modulos.css">    <!-- estilo específico -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/modulos.css">
 </head>
+
 <body>
-  <header>
-    <h1>Módulos do Curso</h1>
-    <p>Clique em um módulo para ver descrição, links, ebooks e vídeo.</p>
-  </header>
 
-  <main class="container">
-    <div id="modulesContainer" class="modulos-grid"></div>
+<header>
+  <h1>Módulos do Curso</h1>
+  <p>Clique em um módulo para ver descrição, links e exercícios.</p>
+</header>
 
-    <section id="conteudoModulo" class="hidden detalhe-modulo">
-      <button id="voltarBtn" class="btn-voltar">← Voltar</button>
+<main class="container">
 
-      <h2 id="tituloModulo"></h2>
-      <p id="descricaoModulo" class="descricao"></p>
+  <div class="modulos-grid">
 
-      <h3>📺 Vídeo (pesquisa)</h3>
-      <p><a id="videoModulo" href="#" target="_blank">Abrir busca de vídeos no YouTube</a></p>
+    <!-- 🔽 TODOS OS MÓDULOS ABAIXO 🔽 -->
 
-      <h3>🔗 Links úteis</h3>
-      <ul id="linksModulo"></ul>
+    <div class="modulo-card" data-modulo="Administração Escolar"><h3>Administração Escolar</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Anatomia do Sistema Musculoesquelético"><h3>Anatomia do Sistema Musculoesquelético</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Anatomia dos Sistemas Orgânicos"><h3>Anatomia dos Sistemas Orgânicos</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Anatomia e Fisiologia Humana"><h3>Anatomia e Fisiologia Humana</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Antropologia e Sociologia da Educação Física"><h3>Antropologia e Sociologia da Educação Física</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Aprendizagem e Controle Motor"><h3>Aprendizagem e Controle Motor</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Atividades Rítmicas e Dança"><h3>Atividades Rítmicas e Dança</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Atividades Rítmicas na Escola"><h3>Atividades Rítmicas na Escola</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Bases de Biologia Celular e Genética"><h3>Bases de Biologia Celular e Genética</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Biomecânica"><h3>Biomecânica</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Biomecânica do Esporte"><h3>Biomecânica do Esporte</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Cineantropometria"><h3>Cineantropometria</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Cinesiologia e Biomecânica"><h3>Cinesiologia e Biomecânica</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Corporeidade e Psicomotricidade"><h3>Corporeidade e Psicomotricidade</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Currículo e Planejamento da Educação Básica"><h3>Currículo e Planejamento da Educação Básica</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Desenvolvimento Motor"><h3>Desenvolvimento Motor</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Didática e Prática de Ensino"><h3>Didática e Prática de Ensino</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Direitos Educacionais de Crianças e Adolescentes"><h3>Direitos Educacionais de Crianças e Adolescentes</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Direitos Humanos e Relações Étnico-raciais"><h3>Direitos Humanos e Relações Étnico-raciais</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Educação Ambiental e Cidadania"><h3>Educação Ambiental e Cidadania</h3><button>Ver detalhes</button></div>
 
-      <h3>📕 E-books / PDFs (pesquisa)</h3>
-      <ul id="ebooksModulo"></ul>
+    <div class="modulo-card" data-modulo="Educação e Ludicidade"><h3>Educação e Ludicidade</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Educação Física Adaptada"><h3>Educação Física Adaptada</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Educação Física Inclusiva"><h3>Educação Física Inclusiva</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Educação Física: Áreas de Atuação"><h3>Educação Física: Áreas de Atuação</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Epistemologia"><h3>Epistemologia</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Escola e Sociedade"><h3>Escola e Sociedade</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Esportes Individuais"><h3>Esportes Individuais</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Estrutura e Funcionamento da Educação Básica"><h3>Estrutura e Funcionamento da Educação Básica</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Filosofia da Educação"><h3>Filosofia da Educação</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Fisiologia do Exercício"><h3>Fisiologia do Exercício</h3><button>Ver detalhes</button></div>
 
-      <h3>📝 Exercício sugerido</h3>
-      <p id="exercicioModulo"></p>
-    </section>
-  </main>
+    <div class="modulo-card" data-modulo="Fisiologia do Exercício e Prescrição de Exercícios"><h3>Fisiologia do Exercício e Prescrição de Exercícios</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Formação Docente para a Diversidade"><h3>Formação Docente para a Diversidade</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Fundamentos da Epidemiologia e Estatística"><h3>Fundamentos da Epidemiologia e Estatística</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Fundamentos da Ginástica"><h3>Fundamentos da Ginástica</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Fundamentos de Bioquímica"><h3>Fundamentos de Bioquímica</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Fundamentos de Citologia e Histologia"><h3>Fundamentos de Citologia e Histologia</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Fundamentos Teóricos e Metodológicos da Educação Especial e Inclusiva"><h3>Fundamentos Teóricos e Metodológicos da Educação Especial e Inclusiva</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Gestão de Pessoas, Negócios e Organização Desportiva"><h3>Gestão de Pessoas, Negócios e Organização Desportiva</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Gestão Educacional"><h3>Gestão Educacional</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="História da Educação"><h3>História da Educação</h3><button>Ver detalhes</button></div>
 
-  <script src="js/modulos.js"></script>
+    <div class="modulo-card" data-modulo="História e Fund. Socioantropológicos da Educação Física"><h3>História e Fund. Socioantropológicos da Educação Física</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Iniciação Esportiva"><h3>Iniciação Esportiva</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Introdução à Educação Física"><h3>Introdução à Educação Física</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Jogos, Brinquedos e Brincadeiras"><h3>Jogos, Brinquedos e Brincadeiras</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Legislação Educacional"><h3>Legislação Educacional</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Libras - Língua Brasileira de Sinais"><h3>Libras - Língua Brasileira de Sinais</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Metodologia da Educação Física Escolar"><h3>Metodologia da Educação Física Escolar</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Metodologia da Pesquisa e do Trabalho Científico"><h3>Metodologia da Pesquisa e do Trabalho Científico</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Metodologia do Ensino da Dança"><h3>Metodologia do Ensino da Dança</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Metodologia do Ensino da Ginástica Artística Escolar"><h3>Metodologia do Ensino da Ginástica Artística Escolar</h3><button>Ver detalhes</button></div>
+
+    <div class="modulo-card" data-modulo="Metodologia do Ensino das Atividades Aquáticas"><h3>Metodologia do Ensino das Atividades Aquáticas</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Metodologia do Ensino de Atividades Aquáticas"><h3>Metodologia do Ensino de Atividades Aquáticas</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Metodologia do Ensino de Atletismo"><h3>Metodologia do Ensino de Atletismo</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Metodologia do Ensino de Basquetebol"><h3>Metodologia do Ensino de Basquetebol</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Metodologia do Ensino de Futebol e Futsal"><h3>Metodologia do Ensino de Futebol e Futsal</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Metodologia do Ensino de Ginástica"><h3>Metodologia do Ensino de Ginástica</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Metodologia do Ensino de Handebol"><h3>Metodologia do Ensino de Handebol</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Metodologia do Ensino de Lutas Esportivas"><h3>Metodologia do Ensino de Lutas Esportivas</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Metodologia do Ensino de Voleibol"><h3>Metodologia do Ensino de Voleibol</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Metodologia do Ensino do Futebol"><h3>Metodologia do Ensino do Futebol</h3><button>Ver detalhes</button></div>
+
+    <div class="modulo-card" data-modulo="Modalidades Esportivas Coletivas"><h3>Modalidades Esportivas Coletivas</h3><button>Ver detalhes</button></div>
+
+    <div class="modulo-card" data-modulo="Novos Caminhos para Profissionais da Educação"><h3>Novos Caminhos para Profissionais da Educação</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Organização e Administração de Eventos Escolares"><h3>Organização e Administração de Eventos Escolares</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Políticas Públicas em Educação Física"><h3>Políticas Públicas em Educação Física</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Prescrição de Exercícios para Idosos e Doentes Crônicos"><h3>Prescrição de Exercícios para Idosos e Doentes Crônicos</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Prevenção de Acidentes e Socorros de Urgência"><h3>Prevenção de Acidentes e Socorros de Urgência</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Promoção da Saúde na Escola"><h3>Promoção da Saúde na Escola</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Prática Profissional em EF: Cultura e Lazer"><h3>Prática Profissional em EF: Cultura e Lazer</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Prática Profissional em EF: Esportes"><h3>Prática Profissional em EF: Esportes</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Prática Textual em Língua Portuguesa"><h3>Prática Textual em Língua Portuguesa</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Psicologia da Educação"><h3>Psicologia da Educação</h3><button>Ver detalhes</button></div>
+
+    <div class="modulo-card" data-modulo="Psicologia do Desenvolvimento Humano"><h3>Psicologia do Desenvolvimento Humano</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Psicologia do Esporte"><h3>Psicologia do Esporte</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Psicologia no Esporte"><h3>Psicologia no Esporte</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Psicomotricidade no Contexto Escolar"><h3>Psicomotricidade no Contexto Escolar</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Recreação e Lazer"><h3>Recreação e Lazer</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Sociologia da Educação"><h3>Sociologia da Educação</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Teoria e Prática da Ginástica Artística"><h3>Teoria e Prática da Ginástica Artística</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Teoria e Prática dos Esportes de Lutas"><h3>Teoria e Prática dos Esportes de Lutas</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Trabalho de Conclusão de Curso"><h3>Trabalho de Conclusão de Curso</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Transversalidade na Educação"><h3>Transversalidade na Educação</h3><button>Ver detalhes</button></div>
+
+    <div class="modulo-card" data-modulo="Treinamento Neuromuscular e Atividades em Academias"><h3>Treinamento Neuromuscular e Atividades em Academias</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Tópicos Especiais"><h3>Tópicos Especiais</h3><button>Ver detalhes</button></div>
+    <div class="modulo-card" data-modulo="Ética e Deontologia da Educação Física"><h3>Ética e Deontologia da Educação Física</h3><button>Ver detalhes</button></div>
+
+  </div>
+
+  <!-- PAINEL DE DETALHES -->
+  <section id="conteudoModulo" class="hidden detalhe-modulo">
+    <button id="voltarBtn" class="btn-voltar">← Voltar</button>
+    <h2 id="tituloModulo"></h2>
+    <p id="descricaoModulo" class="descricao"></p>
+
+    <h3>📺 Vídeo</h3>
+    <a id="videoModulo" href="#" target="_blank">Abrir no YouTube</a>
+
+    <h3>🔗 Links úteis</h3>
+    <ul id="linksModulo"></ul>
+
+    <h3>📕 PDFs / E-books</h3>
+    <ul id="ebooksModulo"></ul>
+
+    <h3>📝 Exercício sugerido</h3>
+    <p id="exercicioModulo"></p>
+  </section>
+
+</main>
+
+<script src="js/modulos.js"></script>
+
 </body>
 </html>

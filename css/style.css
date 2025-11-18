@@ -1,12 +1,19 @@
 /* ===========================
-   CONFIGURAÇÃO GERAL
+   ESTILO GERAL
 =========================== */
 body {
     margin: 0;
     padding: 0;
-    background: #0d1117;
-    color: #e6edf3;
+    background: #ffeef7; /* Rosa pastel suave */
+    color: #4a3b47; 
     font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Container */
+.container {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 20px;
 }
 
 /* ===========================
@@ -14,39 +21,37 @@ body {
 =========================== */
 header {
     text-align: center;
-    padding: 30px 20px;
-    background: #161b22;
-    border-bottom: 1px solid #30363d;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    padding: 35px 20px;
+    background: #ffcae6; /* Rosa claro */
+    border-bottom: 3px solid #ff9ac9; 
+    box-shadow: 0 2px 8px rgba(255, 153, 204, 0.5);
 }
 
 header h1 {
     margin: 0;
-    font-size: 38px;
-    color: #58a6ff;
-    text-shadow: 0 0 12px rgba(88,166,255,0.4);
-    font-weight: 700;
+    font-size: 40px;
+    color: #d63384; /* Rosa vibrante */
+    text-shadow: 0 0 12px rgba(255, 85, 170, 0.4);
     animation: fadeIn 1s ease-in-out;
 }
 
 /* Campo de busca */
 header input {
     margin-top: 20px;
-    width: 320px;
+    width: 350px;
     padding: 12px;
-    border-radius: 8px;
-    border: none;
-    background: #0d1117;
-    color: white;
+    border-radius: 10px;
+    border: 2px solid #ff9ac9;
+    background: #fff0f8;
+    color: #4a3b47;
     font-size: 16px;
     transition: 0.3s;
-    border: 1px solid #30363d;
 }
 
 header input:focus {
     outline: none;
-    box-shadow: 0 0 12px #58a6ff;
-    border-color: #58a6ff;
+    box-shadow: 0 0 10px #ff66b3;
+    border-color: #ff66b3;
 }
 
 /* ===========================
@@ -59,56 +64,50 @@ header input:focus {
     gap: 18px;
     padding: 20px;
     margin-top: 20px;
-    background: #161b22;
-    border-radius: 10px;
-    box-shadow: 0 0 18px rgba(0,0,0,0.3);
+    background: #ffdaec;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(255, 125, 185, 0.3);
 }
 
 .menu a {
-    color: #c9d1d9;
     text-decoration: none;
     font-size: 18px;
-    padding: 10px 18px;
-    background: #21262d;
-    border-radius: 8px;
+    padding: 12px 20px;
+    background: #ffc1dd;
+    color: #7a4b63;
+    border-radius: 10px;
+    border: 2px solid transparent;
     transition: 0.3s;
-    border: 1px solid transparent;
 }
 
 .menu a:hover {
-    background: #238636;
-    color: #ffffff;
-    border-color: #2ea043;
-    box-shadow: 0 0 12px rgba(46,160,67,0.7);
+    background: #ff8fc8;
+    border-color: #ff5ba6;
+    color: white;
+    box-shadow: 0 0 12px rgba(255, 102, 178, 0.7);
 }
 
 /* ===========================
-   CONTEÚDO PRINCIPAL
+   BLOCO DE INTRODUÇÃO
 =========================== */
-.container {
-    max-width: 1100px;
-    margin: 30px auto;
-    padding: 20px;
-}
-
-/* Caixa de introdução */
 .intro {
-    background: #161b22;
+    background: #ffe4f1;
     padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 0 25px rgba(0,0,0,0.4);
-    animation: fadeInUp 1s ease;
+    border-radius: 14px;
+    box-shadow: 0 0 25px rgba(255, 120, 180, 0.3);
+    animation: fadeInUp 0.9s ease;
 }
 
 .intro h2 {
     font-size: 28px;
+    color: #d63384;
     margin-top: 0;
-    color: #58a6ff;
 }
 
 .intro p {
     font-size: 18px;
     line-height: 1.7;
+    color: #5c4b54;
 }
 
 /* ===========================
@@ -125,7 +124,7 @@ header input:focus {
 }
 
 /* ===========================
-   RESPONSIVIDADE
+   RESPONSIVO
 =========================== */
 @media (max-width: 600px) {
 
@@ -139,10 +138,10 @@ header input:focus {
 
     .menu a {
         font-size: 16px;
-        padding: 8px 14px;
+        padding: 9px 12px;
     }
 
     .intro {
-        padding: 20px;
+        padding: 22px;
     }
 }

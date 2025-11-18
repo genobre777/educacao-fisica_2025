@@ -1,253 +1,248 @@
 // =========================
-// LISTA DE MÓDULOS + DESCRIÇÕES
+// LISTA DE TODOS OS MÓDULOS
 // =========================
-const modulos = {
-  "Administração Escolar": {
-    descricao: "Estuda a organização, gestão e funcionamento das instituições escolares, abordando planejamento, coordenação e administração pedagógica.",
-  },
-  "Anatomia do Sistema Musculoesquelético": {
-    descricao: "Explora a estrutura e funcionamento de ossos, músculos, articulações e tecidos relacionados ao movimento humano.",
-  },
-  "Anatomia dos Sistemas Orgânicos": {
-    descricao: "Aborda os sistemas do corpo humano — respiratório, circulatório, digestório, entre outros — e suas funções integradas.",
-  },
-  "Anatomia e Fisiologia Humana": {
-    descricao: "Estudo completo da estrutura e funcionamento do corpo humano, relacionando anatomia e fisiologia aos movimentos e ao exercício.",
-  },
-  "Antropologia e Sociologia da Educação Física": {
-    descricao: "Analisa aspectos sociais e culturais do corpo, movimento e esporte dentro da sociedade.",
-  },
-  "Aprendizagem e Controle Motor": {
-    descricao: "Estuda como aprendemos movimentos, mecanismos neurológicos e como melhorar a performance motora.",
-  },
-  "Atividades Rítmicas e Dança": {
-    descricao: "Compreensão do movimento expressivo, ritmo e dança aplicada ao contexto escolar e artístico.",
-  },
-  "Atividades Rítmicas na Escola": {
-    descricao: "Trabalha atividades musicais, expressivas e rítmicas com foco pedagógico.",
-  },
-  "Bases de Biologia Celular e Genética": {
-    descricao: "Estudo da célula, divisão celular, hereditariedade e fundamentos biológicos aplicados ao corpo humano.",
-  },
-  "Biomecânica": {
-    descricao: "Analisa forças, movimentos e mecânica do corpo humano para entender e otimizar o desempenho físico.",
-  },
-  "Biomecânica do Esporte": {
-    descricao: "Aplica princípios biomecânicos para melhorar técnicas esportivas e prevenir lesões.",
-  },
-  "Cineantropometria": {
-    descricao: "Avalia medidas corporais, composição corporal e somatotipos para fins de saúde e desempenho.",
-  },
-  "Cinesiologia e Biomecânica": {
-    descricao: "Estuda os movimentos corporais e as forças que os produzem.",
-  },
-  "Corporeidade e Psicomotricidade": {
-    descricao: "Explora a relação entre corpo, mente, movimento e aprendizagem.",
-  },
-  "Currículo e Planejamento da Educação Básica": {
-    descricao: "Foca na organização curricular e na construção de planos educacionais.",
-  },
-  "Desenvolvimento Motor": {
-    descricao: "Analisa como habilidades motoras evoluem ao longo da vida.",
-  },
-  "Didática e Prática de Ensino": {
-    descricao: "Estuda métodos de ensino, estratégias pedagógicas e prática docente.",
-  },
-  "Direitos Educacionais de Crianças e Adolescentes": {
-    descricao: "Aborda legislação que protege estudantes e estrutura a educação básica.",
-  },
-  "Direitos Humanos e Relações Étnico-raciais": {
-    descricao: "Discute igualdade, diversidade e combate ao preconceito no ambiente escolar.",
-  },
-  "Educação Ambiental e Cidadania": {
-    descricao: "Promove consciência ambiental e responsabilidade social.",
-  },
-  "Educação e Ludicidade": {
-    descricao: "Explora o uso do lúdico, jogos e brincadeiras como ferramentas pedagógicas.",
-  },
-  "Educação Física Adaptada": {
-    descricao: "Estudo de práticas inclusivas para pessoas com deficiência.",
-  },
-  "Educação Física Inclusiva": {
-    descricao: "Garante acesso de todos às práticas corporais e esportivas.",
-  },
-  "Educação Física: Áreas de Atuação": {
-    descricao: "Apresenta campos de trabalho como escolas, academias, saúde, esporte e lazer.",
-  },
-  "Epistemologia": {
-    descricao: "Estuda a construção do conhecimento científico, especialmente na Educação Física.",
-  },
-  "Escola e Sociedade": {
-    descricao: "Relaciona educação, cultura, política e sociedade.",
-  },
-  "Esportes Individuais": {
-    descricao: "Estudo técnico e pedagógico de esportes individualizados.",
-  },
-  "Estrutura e Funcionamento da Educação Básica": {
-    descricao: "Analisa como a educação é organizada no Brasil.",
-  },
-  "Filosofia da Educação": {
-    descricao: "Discute correntes filosóficas e sua influência na educação.",
-  },
-  "Fisiologia do Exercício": {
-    descricao: "Estuda as respostas do corpo ao exercício físico.",
-  },
-  "Fisiologia do Exercício e Prescrição de Exercícios": {
-    descricao: "Ensina a montar treinos com base em respostas fisiológicas.",
-  },
-  "Formação Docente para a Diversidade": {
-    descricao: "Trabalha práticas inclusivas e valorização da diversidade.",
-  },
-  "Fundamentos da Epidemiologia e Estatística": {
-    descricao: "Aplica estatística na saúde e análise de dados.",
-  },
-  "Fundamentos da Ginástica": {
-    descricao: "Aborda tipos e fundamentos pedagógicos da ginástica.",
-  },
-  "Fundamentos de Bioquímica": {
-    descricao: "Estuda reações químicas do corpo, energia e metabolismo.",
-  },
-  "Fundamentos de Citologia e Histologia": {
-    descricao: "Aborda células e tecidos do corpo humano.",
-  },
-  "Fundamentos Teóricos da Educação Especial e Inclusiva": {
-    descricao: "Estuda práticas pedagógicas para inclusão.",
-  },
-  "Gestão de Pessoas, Negócios e Organização Desportiva": {
-    descricao: "Aborda gestão esportiva e administração de equipes.",
-  },
-  "Gestão Educacional": {
-    descricao: "Trata de organização administrativa da educação.",
-  },
-  "História da Educação": {
-    descricao: "Analisa evolução histórica da educação.",
-  },
-  "História e Fund. Socioantropológicos da Educação Física": {
-    descricao: "Estuda origem e evolução da área.",
-  },
-  "Iniciação Esportiva": {
-    descricao: "Aborda métodos para introdução ao esporte.",
-  },
-  "Introdução à Educação Física": {
-    descricao: "Visão geral da área, fundamentos e campos de atuação.",
-  },
-  "Jogos, Brinquedos e Brincadeiras": {
-    descricao: "Trabalha ludicidade e jogos como instrumentos pedagógicos.",
-  },
-  "Legislação Educacional": {
-    descricao: "Estuda leis que regem o ensino no Brasil.",
-  },
-  "Libras - Língua Brasileira de Sinais": {
-    descricao: "Introdução à comunicação com pessoas surdas.",
-  },
-  "Metodologia da Educação Física Escolar": {
-    descricao: "Aborda práticas pedagógicas específicas da área.",
-  },
-  "Metodologia da Pesquisa e Trabalho Científico": {
-    descricao: "Ensina produção de artigos, projetos e metodologia de pesquisa.",
-  },
-  "Metodologia do Ensino da Dança": {
-    descricao: "Aplica dança no contexto pedagógico.",
-  },
-  "Metodologia do Ensino de Atletismo": {
-    descricao: "Técnicas de corrida, salto e arremesso na escola.",
-  },
-  "Metodologia do Ensino de Futebol e Futsal": {
-    descricao: "Ensina fundamentos e didática dessas modalidades.",
-  },
-  "Metodologia do Ensino de Voleibol": {
-    descricao: "Aplicação pedagógica do voleibol.",
-  },
-  "Metodologia do Ensino de Handebol": {
-    descricao: "Técnicas e práticas pedagógicas do handebol.",
-  },
-  "Modalidades Esportivas Coletivas": {
-    descricao: "Estuda esportes coletivos e suas táticas.",
-  },
-  "Promoção da Saúde na Escola": {
-    descricao: "Trabalha hábitos saudáveis no ambiente escolar.",
-  },
-  "Psicologia do Esporte": {
-    descricao: "Estuda motivação, foco, emoções e desempenho.",
-  },
-  "Recreação e Lazer": {
-    descricao: "Organiza atividades recreativas, jogos e eventos.",
-  },
-  "Teoria e Prática dos Esportes de Lutas": {
-    descricao: "Introdução pedagógica a esportes de combate.",
-  },
-  "Trabalho de Conclusão de Curso": {
-    descricao: "Etapa final de elaboração do TCC.",
-  },
-  "Treinamento Neuromuscular e Academias": {
-    descricao: "Ensina prescrição de treino e otimização muscular.",
-  },
-  "Ética e Deontologia da Educação Física": {
-    descricao: "Código profissional, ética e responsabilidades da área.",
-  }
-};
+
+const modulos = [
+ { titulo: "Administração Escolar",
+   descricao: "Estuda a organização, gestão e funcionamento das instituições escolares, abordando liderança, políticas educacionais e processos administrativos.",
+ },
+ { titulo: "Anatomia do Sistema Musculoesquelético",
+   descricao: "Estuda músculos, ossos, articulações, movimentos e biomecânica básica.",
+ },
+ { titulo: "Anatomia dos Sistemas Orgânicos",
+   descricao: "Explora os sistemas do corpo humano, como respiratório, digestório, circulatório e nervoso.",
+ },
+ { titulo: "Anatomia e Fisiologia Humana",
+   descricao: "Analisa estruturas corporais e o funcionamento dos órgãos, essencial para a compreensão do movimento humano.",
+ },
+ { titulo: "Antropologia e Sociologia da Educação Física",
+   descricao: "Estuda o comportamento humano, cultura, sociedade e como influenciam práticas corporais e esportivas.",
+ },
+ { titulo: "Aprendizagem e Controle Motor",
+   descricao: "Analisa como o corpo aprende novos movimentos, coordenação e habilidades motoras.",
+ },
+ { titulo: "Atividade Formativa I",
+   descricao: "Atividade aplicada voltada para reforçar o conteúdo estudado durante o módulo.",
+ },
+ { titulo: "Atividade Formativa II",
+   descricao: "Continuação das atividades práticas de aplicação do conteúdo teórico.",
+ },
+ { titulo: "Atividade Formativa III",
+   descricao: "Atividades práticas para aprofundamento da aprendizagem.",
+ },
+ { titulo: "Atividade Formativa IV",
+   descricao: "Atividades finais de reforço e aplicação prática do conhecimento.",
+ },
+ { titulo: "Atividade Formativa V",
+   descricao: "Exercícios complementares e estudos aplicados.",
+ },
+ { titulo: "Avaliação Física",
+   descricao: "Estuda métodos para avaliar composição corporal, capacidades físicas e saúde.",
+ },
+ { titulo: "Biomecânica",
+   descricao: "Estuda forças, movimentos e mecânica aplicada ao corpo humano durante o exercício.",
+ },
+ { titulo: "Bioquímica",
+   descricao: "Aborda processos químicos do corpo humano, como energia, metabolismo e nutrientes.",
+ },
+ { titulo: "Didática",
+   descricao: "Estuda métodos de ensino e aprendizagem, estratégias pedagógicas e planejamento.",
+ },
+ { titulo: "Educação Física Adaptada",
+   descricao: "Trata do ensino de atividades físicas adaptadas para pessoas com deficiências.",
+ },
+ { titulo: "Estágio Supervisionado I",
+   descricao: "Vivência prática inicial em ambientes educacionais.",
+ },
+ { titulo: "Estágio Supervisionado II",
+   descricao: "Aplicação prática intermediária de técnicas de ensino.",
+ },
+ { titulo: "Estágio Supervisionado III",
+   descricao: "Vivência avançada no ambiente educacional.",
+ },
+ { titulo: "Estágio Supervisionado IV",
+   descricao: "Conclusão prática do processo educativo.",
+ },
+ { titulo: "Fisiologia do Exercício",
+   descricao: "Explora as respostas do corpo à prática de exercícios físicos.",
+ },
+ { titulo: "Fundamentos da Educação",
+   descricao: "Analisa conceitos básicos de pedagogia, escola, ensino e aprendizagem.",
+ },
+ { titulo: "Fundamentos do Esporte",
+   descricao: "Estuda regras, história e características de diversas modalidades esportivas.",
+ },
+ {
+   titulo: "Fundamentos e Práticas do Treinamento",
+   descricao: "Aborda métodos de treinamento físico, periodização e práticas esportivas.",
+ },
+ { titulo: "Ginástica e Dança",
+   descricao: "Explora movimentos corporais, expressão, ritmo e modalidades de ginástica.",
+ },
+ { titulo: "História da Educação Física",
+   descricao: "Estuda a evolução da Educação Física no Brasil e no mundo.",
+ },
+ { titulo: "Libras",
+   descricao: "Introdução à Língua Brasileira de Sinais e comunicação inclusiva.",
+ },
+ { titulo: "Metodologia do Trabalho Científico",
+   descricao: "Ensina como produzir trabalhos acadêmicos e pesquisas científicas.",
+ },
+ { titulo: "Metodologias de Ensino na Educação Básica I",
+   descricao: "Estratégias de ensino voltadas para séries iniciais.",
+ },
+ { titulo: "Metodologias de Ensino na Educação Básica II",
+   descricao: "Técnicas pedagógicas e aplicação prática em turmas escolares.",
+ },
+ { titulo: "Metodologias de Ensino na Educação Infantil",
+   descricao: "Metodologias específicas para crianças em fase inicial.",
+ },
+ { titulo: "Neurociência da Aprendizagem",
+   descricao: "Explora o funcionamento do cérebro no processo de aprender.",
+ },
+ { titulo: "Nutrição",
+   descricao: "Estuda nutrientes, dietas, metabolismo e alimentação saudável.",
+ },
+ { titulo: "Organização e Funcionamento da Educação Básica",
+   descricao: "Explora estrutura, leis e funcionamento da educação no Brasil.",
+ },
+ { titulo: "Políticas Públicas da Educação Básica",
+   descricao: "Análise das leis e políticas que regem a educação no país.",
+ },
+ { titulo: "Práticas Pedagógicas Integradoras",
+   descricao: "Integra conteúdos com práticas reais no ambiente escolar.",
+ },
+ { titulo: "Primeiros Socorros",
+   descricao: "Técnicas básicas para atendimento emergencial.",
+ },
+ { titulo: "Projeto Integrador I",
+   descricao: "Projeto prático interdisciplinar com base nos módulos iniciais.",
+ },
+ { titulo: "Projeto Integrador II",
+   descricao: "Projeto focado em análise prática e pesquisa.",
+ },
+ { titulo: "Projeto Integrador III",
+   descricao: "Projeto aplicado com desenvolvimento de soluções reais.",
+ },
+ { titulo: "Projeto Integrador IV",
+   descricao: "Projeto final integrando todo o aprendizado do curso.",
+ },
+ { titulo: "Psicologia da Aprendizagem",
+   descricao: "Analisa comportamentos e fatores que influenciam o aprendizado.",
+ },
+ { titulo: "Psicologia do Desenvolvimento",
+   descricao: "Estuda como o ser humano se desenvolve ao longo da vida.",
+ },
+ { titulo: "Recreação e Lazer",
+   descricao: "Explora atividades recreativas e o papel do lazer na saúde.",
+ },
+ { titulo: "Saúde Coletiva",
+   descricao: "Estuda políticas, estratégias e práticas voltadas à saúde pública.",
+ },
+ { titulo: "Segurança no Ambiente Escolar",
+   descricao: "Estuda prevenção de acidentes e riscos no ambiente escolar.",
+ },
+ { titulo: "Seminários Integradores",
+   descricao: "Apresentações e estudos interdisciplinares.",
+ },
+ { titulo: "Socorros Imediatos",
+   descricao: "Aborda ações emergenciais rápidas em acidentes.",
+ },
+ { titulo: "Sociologia",
+   descricao: "Estuda relações sociais, cultura e comportamento humano.",
+ },
+ { 
+   titulo: "Tecnologia Assistiva",
+   descricao: "Estuda ferramentas e recursos que auxiliam pessoas com deficiência no aprendizado e nas práticas corporais."
+ },
+ { 
+   titulo: "Tecnologias da Educação Básica",
+   descricao: "Explora tecnologias educacionais aplicadas ao ensino."
+ },
+ { 
+   titulo: "Teoria e Prática da Avaliação I",
+   descricao: "Estuda ferramentas e critérios de avaliação escolar."
+ },
+ { 
+   titulo: "Teoria e Prática da Avaliação II",
+   descricao: "Aprofunda métodos avaliativos e análise de desempenho."
+ },
+ { 
+   titulo: "Treinamento Resistido",
+   descricao: "Estuda musculação, força, adaptações e métodos de treino."
+ },
+];
 
 
-// =========================
-// CRIAÇÃO DOS CARDS
-// =========================
+
+// ===========================
+// EXIBE CARDS DOS MÓDULOS
+// ===========================
+
+document.addEventListener("DOMContentLoaded", () => {
+  exibirModulos();
+});
+
 function exibirModulos() {
   const container = document.getElementById("modulesContainer");
   container.innerHTML = "";
 
-  Object.keys(modulos).forEach((nome) => {
+  modulos.forEach((modulo, index) => {
     const div = document.createElement("div");
     div.classList.add("modulo-card");
-    div.textContent = nome;
 
-    div.onclick = () => abrirModulo(nome);
+    div.innerHTML = `
+      <h3>${modulo.titulo}</h3>
+      <button class="btn-abrir" onclick="abrirModulo(${index})">Abrir</button>
+    `;
 
     container.appendChild(div);
   });
 }
 
 
-// =========================
+
+// ===========================
 // ABRIR DETALHES DO MÓDULO
-// =========================
-function abrirModulo(nome) {
-  const modulo = modulos[nome];
+// ===========================
 
-  document.getElementById("tituloModulo").textContent = nome;
-  document.getElementById("descricaoModulo").textContent = modulo.descricao;
+function abrirModulo(i) {
+  const modulo = modulos[i];
 
-  // links automáticos
+  document.getElementById("tituloModulo").textContent = modulo.titulo;
+  document.getElementById("descricaoModulo").innerText = modulo.descricao;
+
   document.getElementById("videoModulo").href =
-    `https://www.youtube.com/results?search_query=${encodeURIComponent(nome + " Educação Física")}`;
+    `https://www.youtube.com/results?search_query=${encodeURIComponent(modulo.titulo)}`;
 
-  // eBooks automáticos
-  document.getElementById("ebooksModulo").innerHTML =
-    `<li><a href="https://www.google.com/search?q=${encodeURIComponent(nome + " PDF")}" target="_blank">Pesquisar PDF no Google</a></li>`;
+  // LINKS ÚTEIS
+  const linksUl = document.getElementById("linksModulo");
+  linksUl.innerHTML = `
+    <li><a href="https://www.google.com/search?q=${encodeURIComponent(modulo.titulo)}" target="_blank">Pesquisa no Google</a></li>
+  `;
 
-  // link útil (exemplo)
-  document.getElementById("linksModulo").innerHTML =
-    `<li><a href="https://pt.wikipedia.org/wiki/${encodeURIComponent(nome)}" target="_blank">Wikipedia</a></li>`;
+  // EBOOKS
+  const ebooksUl = document.getElementById("ebooksModulo");
+  ebooksUl.innerHTML = `
+    <li><a href="https://www.google.com/search?q=${encodeURIComponent(modulo.titulo)}+PDF" target="_blank">Pesquisar PDFs</a></li>
+  `;
 
-  // exercício sugerido
-  document.getElementById("exercicioModulo").textContent =
-    "Escreva um resumo de 5 linhas explicando a importância desse conteúdo para a prática profissional.";
+  // EXERCÍCIO PADRÃO
+  document.getElementById("exercicioModulo").innerText =
+    "Faça um resumo de 5 linhas sobre o que você entendeu deste módulo.";
 
-  // alternar telas
-  document.getElementById("modulesContainer").style.display = "none";
+  // trocar telas
   document.getElementById("conteudoModulo").classList.remove("hidden");
+  document.getElementById("modulesContainer").style.display = "grid";
 }
 
 
-// =========================
+
+// ===========================
 // BOTÃO VOLTAR
-// =========================
-document.getElementById("voltarBtn").onclick = () => {
+// ===========================
+
+document.getElementById("voltarBtn").addEventListener("click", () => {
   document.getElementById("conteudoModulo").classList.add("hidden");
   document.getElementById("modulesContainer").style.display = "grid";
-};
-
-
-// =========================
-// INICIALIZAR
-// =========================
-document.addEventListener("DOMContentLoaded", exibirModulos);
+});

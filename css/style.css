@@ -4,8 +4,8 @@
 body {
     margin: 0;
     padding: 0;
-    background: #ffeef7; /* Rosa pastel suave */
-    color: #4a3b47; 
+    background: #FFF6EC; /* bege pastel suave */
+    color: #4A4A4A;
     font-family: "Segoe UI", Arial, sans-serif;
 }
 
@@ -22,36 +22,37 @@ body {
 header {
     text-align: center;
     padding: 35px 20px;
-    background: #ffcae6; /* Rosa claro */
-    border-bottom: 3px solid #ff9ac9; 
-    box-shadow: 0 2px 8px rgba(255, 153, 204, 0.5);
+    background: #F8C8DC; /* rosa pastel */
+    border-bottom: 3px solid #F4A9C2;
+    box-shadow: 0 2px 12px rgba(244, 169, 194, 0.45);
 }
 
 header h1 {
     margin: 0;
     font-size: 40px;
-    color: #d63384; /* Rosa vibrante */
-    text-shadow: 0 0 12px rgba(255, 85, 170, 0.4);
+    color: #A7648F; /* lilás rosado */
+    text-shadow: 0 0 12px rgba(230, 175, 200, 0.4);
+    font-weight: 700;
     animation: fadeIn 1s ease-in-out;
 }
 
 /* Campo de busca */
 header input {
-    margin-top: 20px;
-    width: 350px;
-    padding: 12px;
-    border-radius: 10px;
-    border: 2px solid #ff9ac9;
-    background: #fff0f8;
-    color: #4a3b47;
+    margin-top: 18px;
+    width: 340px;
+    padding: 13px;
+    border-radius: 12px;
+    border: 2px solid #F4A9C2;
+    background: #FFEAF3; /* rosa quase branco */
+    color: #4A4A4A;
     font-size: 16px;
     transition: 0.3s;
 }
 
 header input:focus {
     outline: none;
-    box-shadow: 0 0 10px #ff66b3;
-    border-color: #ff66b3;
+    border-color: #D9C7F3; /* lilás pastel */
+    box-shadow: 0 0 10px rgba(217, 199, 243, 0.7);
 }
 
 /* ===========================
@@ -64,50 +65,51 @@ header input:focus {
     gap: 18px;
     padding: 20px;
     margin-top: 20px;
-    background: #ffdaec;
-    border-radius: 12px;
-    box-shadow: 0 0 20px rgba(255, 125, 185, 0.3);
+    background: #FFF0D9; /* creme pastel */
+    border-radius: 14px;
+    box-shadow: 0 0 20px rgba(255, 210, 170, 0.4);
 }
 
 .menu a {
     text-decoration: none;
     font-size: 18px;
     padding: 12px 20px;
-    background: #ffc1dd;
-    color: #7a4b63;
+    background: #C7E9FB; /* azul pastel */
+    color: #505050;
     border-radius: 10px;
     border: 2px solid transparent;
     transition: 0.3s;
 }
 
 .menu a:hover {
-    background: #ff8fc8;
-    border-color: #ff5ba6;
-    color: white;
-    box-shadow: 0 0 12px rgba(255, 102, 178, 0.7);
+    background: #D9C7F3; /* lilás pastel */
+    border-color: #B7DEB2; /* verde pastel */
+    color: #4A4A4A;
+    box-shadow: 0 0 12px rgba(183, 222, 178, 0.7);
 }
 
 /* ===========================
-   BLOCO DE INTRODUÇÃO
+   INTRO / CONTEÚDO
 =========================== */
 .intro {
-    background: #ffe4f1;
+    background: #FFFFFF;
     padding: 30px;
     border-radius: 14px;
-    box-shadow: 0 0 25px rgba(255, 120, 180, 0.3);
+    box-shadow: 0 0 25px rgba(150, 150, 150, 0.2);
     animation: fadeInUp 0.9s ease;
+    border-left: 6px solid #F4A9C2; /* detalhe pastel */
 }
 
 .intro h2 {
     font-size: 28px;
-    color: #d63384;
+    color: #A7648F; /* rosa/lilás */
     margin-top: 0;
 }
 
 .intro p {
     font-size: 18px;
     line-height: 1.7;
-    color: #5c4b54;
+    color: #4A4A4A;
 }
 
 /* ===========================
@@ -124,7 +126,7 @@ header input:focus {
 }
 
 /* ===========================
-   RESPONSIVO
+   RESPONSIVIDADE
 =========================== */
 @media (max-width: 600px) {
 

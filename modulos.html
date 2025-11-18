@@ -1,50 +1,41 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>Módulos do Curso</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/modulos.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Módulos • Educação Física</title>
+  <link rel="stylesheet" href="css/style.css">      <!-- seu style principal -->
+  <link rel="stylesheet" href="css/modulos.css">    <!-- estilo específico -->
 </head>
 <body>
-
-<header>
+  <header>
     <h1>Módulos do Curso</h1>
-</header>
+    <p>Clique em um módulo para ver descrição, links, ebooks e vídeo.</p>
+  </header>
 
-<div class="container">
-
-    <!-- LISTA DE MÓDULOS -->
+  <main class="container">
     <div id="modulesContainer" class="modulos-grid"></div>
 
-    <!-- CONTEÚDO DO MÓDULO -->
-    <div id="conteudoModulo" class="hidden">
+    <section id="conteudoModulo" class="hidden detalhe-modulo">
+      <button id="voltarBtn" class="btn-voltar">← Voltar</button>
 
-        <button id="voltarBtn" class="btn">⬅ Voltar</button>
+      <h2 id="tituloModulo"></h2>
+      <p id="descricaoModulo" class="descricao"></p>
 
-        <h2 id="tituloModulo"></h2>
+      <h3>📺 Vídeo (pesquisa)</h3>
+      <p><a id="videoModulo" href="#" target="_blank">Abrir busca de vídeos no YouTube</a></p>
 
-        <p id="descricaoModulo" class="descricao"></p>
+      <h3>🔗 Links úteis</h3>
+      <ul id="linksModulo"></ul>
 
-        <h3>📘 Vídeo Explicativo</h3>
-        <div id="videoModulo"></div>
+      <h3>📕 E-books / PDFs (pesquisa)</h3>
+      <ul id="ebooksModulo"></ul>
 
-        <h3>📚 Texto Explicativo</h3>
-        <p id="textoModulo"></p>
+      <h3>📝 Exercício sugerido</h3>
+      <p id="exercicioModulo"></p>
+    </section>
+  </main>
 
-        <h3>🔗 Links Úteis</h3>
-        <ul id="linksModulo"></ul>
-
-        <h3>📕 E-books</h3>
-        <ul id="ebooksModulo"></ul>
-
-        <h3>📝 Exercício recomendado</h3>
-        <p id="exercicioModulo"></p>
-
-    </div>
-
-</div>
-
-<script src="js/modulos.js"></script>
+  <script src="js/modulos.js"></script>
 </body>
 </html>
